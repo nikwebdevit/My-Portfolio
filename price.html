@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css"
+    integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
+
+  <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:400,700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap&subset=cyrillic" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Pattaya&display=swap&subset=cyrillic" rel="stylesheet">
+
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/main.css">
+  <script src="js/loader.js"></script>
+</head>
+
+<body>
+  <div class="wrapper">
+    <aside class="aside">
+      <div class="aside-logo">
+        <a href="index.html" class="logo transition"><i class="fas fa-code"></i>
+          <h1>
+            Dima Nikolaenko
+            <span>Front-end Developer</span>
+          </h1>
+        </a>
+      </div>
+      <nav class="aside-menu">
+        <ul>
+          <li><a class="transition" href="index.html">Главная</a></li>
+          <li><a class="transition" href="about.html">Обо Мне</a></li>
+          <li><a class="transition" href="services.html">Услуги</a></li>
+          <li><a class="transition" href="skills.html">Навыки</a></li>
+          <li><a class="transition" href="portfolio.html">Портфолио</a></li>
+          <li class="active"><a class="transition" href="price.html">Прайс-лист</a></li>
+          <li><a class="transition" href="blog.html">Блог</a></li>
+          <li><a class="transition" href="contact.html">Контакты</a></li>
+        </ul>
+      </nav>
+      <div class="aside-footer">
+        <div class="aside-soc">
+          <a href=""><i class="fab fa-linkedin-in"></i></a>
+          <a href=""><i class="fab fa-github"></i></a>
+          <a href=""><i class="fab fa-instagram"></i></a>
+        </div>
+        <div class="copyright">&#169 Dima Nikolaenko, 2020</div>
+      </div>
+    </aside>
+    <div class="main">
+      <div class="burger"><span class="burger__line burger__menu"></span><span class="burger__close burger__menu burger__noactive"></span></div>
+      <div class="button__top"><i class="fas fa-arrow-circle-up"></i></div>
+      <div class="main_header_name">
+        <span class="heading-meta">Читать</span>
+        <h2>Прайс-лист</h2>
+      </div>
+
+      <div class="price">
+        <div class="price__title">
+          Моя цель - предоставить лучшую услугу на рынке!
+        </div>
+        <div class="info-price">
+          <div class="info-price__title">
+            Работая со мной вы экономите:
+          </div>
+          <div class="info-price__wrapper">
+            <div class="item-price">
+              <span class="item-price__bold">Деньги.</span>
+              За мои услуги вы платите столько, сколько они действительно стоят. Ничего лишнего. 100% отработка ваших
+              денег.
+            </div>
+            <div class="item-price">
+              <span class="item-price__bold">Время.</span>
+              Предлагаю вам создание сайта любой сложности в самые сжатые сроки, без потери качества выполнения работы.
+            </div>
+            <div class="item-price">
+              <span class="item-price__bold">Нервы.</span>
+              Быстро устраню любую проблему на вашем сайте, всегда бываю на связи, и никуда не пропадаю! Связь любым
+              удобным для вас способом.
+            </div>
+          </div>
+          <div class="info-price__title">
+            Вы гарантировано получаете:
+          </div>
+          <div class="warranty-price">
+            <ul>
+              <li>сайт, одинаково отображающийся во всех современных браузерах;</li>
+              <li>оптимизированный дизайн страниц под современные мобильные устройства;</li>
+              <li>отношение к Вашему проекту как к своему собственному;</li>
+              <li>оперативную работу в соответствии с установленным дедлайном.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="resume resume-hover cost cost-hover">
+        <div class="resume-name cost-name">
+          <div>
+            <i class="fas fa-dollar-sign"></i>
+            Стоимость услуг и оформление заказа
+            <i class="fas fa-dollar-sign"></i>
+          </div>
+          <span class="cost-name-desc">Ниже представлена минимальная стоимость услуг!</span>
+        </div>
+        <form method="POST" name="order__cost" class="form-element" id="order__cost" enctype="multipart/form-data">
+        </form>
+        <div>
+          <div class="c1">Тип сайта:</div>
+          <div class="c2">
+            <div class="item-cost__service">
+              <label for="a1">
+                <input id="a1" value="100$" data-cost='100' type="checkbox" class="cost-checkbox" form="order__cost"
+                  name="Landing_Page">
+                Landing Page
+                <span class="item-cost__desc ">100$</span>
+              </label>
+            </div>
+            <div class="item-cost__service">
+              <label for="a2">
+                <input id="a2" value="100$" data-cost='100' type="checkbox" class="cost-checkbox" form="order__cost"
+                  name="Сайт_визитка">
+                Сайт визитка
+                <span class="item-cost__desc">100$</span>
+              </label>
+            </div>
+            <div class="item-cost__service">
+              <label for="a3">
+                <input id="a3" value="100$" data-cost='100' type="checkbox" class="cost-checkbox" form="order__cost"
+                  name="Личный_блог">
+                Личный блог
+                <span class="item-cost__desc">100$</span>
+              </label>
+            </div>
+            <div class="item-cost__service">
+              <label for="a4">
+                <input id="a4" value="100$" data-cost='100' type="checkbox" class="cost-checkbox" form="order__cost"
+                  name="Интернет-магазин">
+                Интернет-магазин
+                <span class="item-cost__desc">100$</span>
+              </label>
+            </div>
+            <div class="item-cost__service">
+              <label for="a5">
+                <input id="a5" value="100$" data-cost='100' type="checkbox" class="cost-checkbox" form="order__cost"
+                  name="Корпоративный_сайт">
+                Корпоративный сайт
+                <span class="item-cost__desc">100$</span>
+              </label>
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <div class="c1">Функционал сайта:</div>
+          <div class="c2">
+            <div class="item-cost__service">
+              <label for="c1">
+                <input id="c1" value="100$" data-cost='100' type="checkbox" class="cost-checkbox" form="order__cost"
+                  name="Статистика_посещений">
+                Статистика посещений
+                <span class="item-cost__desc">100$</span>
+              </label>
+            </div>
+            <div class="item-cost__service">
+              <label for="c2">
+                <input id="c2" value="100$" data-cost='100' type="checkbox" class="cost-checkbox" form="order__cost"
+                  name="Новостная_лента">
+                Новостная лента
+                <span class="item-cost__desc">100$</span>
+              </label>
+            </div>
+            <div class="item-cost__service">
+              <label for="c3">
+                <input id="c3" value="100$" data-cost='100' type="checkbox" class="cost-checkbox" form="order__cost"
+                  name="Поиск">
+                Поиск
+                <span class="item-cost__desc">100$</span>
+              </label>
+            </div>
+            <div class="item-cost__service">
+              <label for="c4">
+                <input id="c4" value="100$" data-cost='100' type="checkbox" class="cost-checkbox" form="order__cost"
+                  name="Форма_обратной_сязи">
+                Форма обратной сязи
+                <span class="item-cost__desc">100$</span>
+              </label>
+            </div>
+            <div class="item-cost__service">
+              <label for="c5">
+                <input id="c5" value="100$" data-cost='100' type="checkbox" class="cost-checkbox" form="order__cost"
+                  name="Слайдер">
+                Слайдер
+                <span class="item-cost__desc">100$</span>
+              </label>
+            </div>
+            <div class="item-cost__service">
+              <label for="c6">
+                <input id="c6" value="100$" data-cost='100' type="checkbox" class="cost-checkbox" form="order__cost"
+                  name="Фотогалерея">
+                Фотогалерея
+                <span class="item-cost__desc">100$</span>
+              </label>
+            </div>
+            <div class="item-cost__service">
+              <label for="c7">
+                <input id="c7" value="100$" data-cost='100' type="checkbox" class="cost-checkbox" form="order__cost"
+                  name="Заказать_звонок">
+                Заказать звонок
+                <span class="item-cost__desc">100$</span>
+              </label>
+            </div>
+            <div class="item-cost__service">
+              <label for="c8">
+                <input id="c8" value="100$" data-cost='100' type="checkbox" class="cost-checkbox" form="order__cost"
+                  name="Онлайн_консультация">
+                Онлайн консультация
+                <span class="item-cost__desc">100$</span>
+              </label>
+            </div>
+            <div class="item-cost__service">
+              <label for="c9">
+                <input id="c9" value="100$" data-cost='100' type="checkbox" class="cost-checkbox" form="order__cost"
+                  name="Подключить_онлайн_оплату">
+                Подключить онлайн оплату
+                <span class="item-cost__desc">100$</span>
+              </label>
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <div class="c1">Адаптив и наполнение:</div>
+          <div class="c2">
+            <div class="item-cost__service">
+              <label for="b1">
+                <input id="b1" value="100$" data-cost='100' type="checkbox" class="cost-checkbox" form="order__cost"
+                  name="Оптимизация_готового_сайта_под_мобильные_устройства">
+                Оптимизация готового сайта под мобильные устройства (1 страница)
+                <span class="item-cost__desc">100$</span>
+              </label>
+            </div>
+            <div class="item-cost__service">
+              <label for="b2">
+                <input id="b2" value="100$" data-cost='100' type="checkbox" class="cost-checkbox" form="order__cost"
+                  name="Информационное_наполнение_сайта">
+                Информационное наполнение сайта
+                <span class="item-cost__desc">100$</span>
+              </label>
+            </div>
+            <div class="item-cost__service">
+              <label for="b3">
+                <input id="b3" value="100$" data-cost='100' type="checkbox" class="cost-checkbox" form="order__cost"
+                  name="Написание_текста_для_сайта">
+                Написание текста для сайта (статья от 500 знаков)
+                <span class="item-cost__desc">100$</span>
+              </label>
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <div class="c1">Прочие услуги:</div>
+          <div class="c2">
+            <div class="item-cost__service">
+              <label for="d1">
+                <input id="d1" value="100$" data-cost='100' type="checkbox" class="cost-checkbox" form="order__cost"
+                  name="Поддержка_и_сопровождение_сайта">
+                Поддержка и сопровождение сайта (1 год)
+                <span class="item-cost__desc">100$</span>
+              </label>
+            </div>
+            <div class="item-cost__service">
+              <label for="d2">
+                <input id="d2" value="100$" data-cost='100' type="checkbox" class="cost-checkbox" form="order__cost"
+                  name="Разработка_калькулятора_на_сайте">
+                Разработка калькулятора на сайте (расчет услуг/товаров)
+                <span class="item-cost__desc">100$</span>
+              </label>
+            </div>
+          </div>
+        </div>
+
+        <div class="sum-total">
+          <p>Общая минимальная стоимость выбраных услуг: <span class="sum">0</span>$</p>
+          <input class="sumv" type="text" value="0" name="SumCost" form="order__cost" style="display: none;">
+          <div class="form-attr sum-button">
+            <a href="#order" class="learn-more sum-button__width">
+              <span class="circle" aria-hidden="true">
+                <span class="icon arrow"></span>
+              </span>
+              <span class="button-text">Оформить заказ</span>
+            </a>
+          </div>
+        </div>
+
+        <div class="sum-total__desc">
+          <span>*</span> Ваша реальная стоимость обсуждается во время личной беседы, а также зависит от сложности вашего
+          макета и срочности выполенения заказа.<span>*</span>
+        </div>
+
+        <div id="order" class="order order__display">
+          <div class="resume-name order__title">
+            <i class="fas fa-envelope"></i>
+            ВЫ ГОТОВЫ СДЕЛАТЬ ЗАКАЗ?
+          </div>
+          <div class="order__block">
+            <label for="name">
+              Представьтесь, пожалуйста<span class="necessarily">*</span>
+              <input type="text" id="name" required form="order__cost" name="Имя">
+            </label>
+          </div>
+          <div class="order__block">
+            <label for="email">
+              Ваш e-mail<span class="necessarily">*</span>
+              <input type="email" id="email" required form="order__cost" name="e-mail">
+            </label>
+          </div>
+          <div class="order__block">
+            <label for="tel">
+              Контактный телефон<span class="necessarily">*</span>
+              <input type="tel" id="tel" required form="order__cost" name="Телефон" placeholder="">
+            </label>
+          </div>
+          <div class="order__block">
+            <label for="communication">
+              Выберете удобный способ связи<span class="necessarily">*</span>
+              <select id="communication" form="order__cost" name="Споспоб_связи">
+                <option value="telegram">Telegram</option>
+                <option value="viber">Viber</option>
+                <option value="whatsapp">WhatsApp</option>
+                <option value="email">Email</option>
+              </select>
+            </label>
+          </div>
+
+          <div class="term-form">
+            <div class="term-form__title">Срок на разработку</div>
+            <div class="term-form__wrapper">
+              <label class="term-form__radio">
+                <input checked type="radio" id="Term" value="Нужно срочно" name="radio1" form="order__cost">
+                <div>
+                  Нужно срочно
+                </div>
+              </label>
+              <label class="term-form__radio">
+                <input type="radio" id="noTerm" value="Я не спешу" name="radio1" form="order__cost">
+                <div>
+                  Я не спешу
+                </div>
+              </label>
+            </div>
+          </div>
+
+          <div class="term-form">
+            <div class="term-form__title">Есть ли у вас техническое задание?</div>
+            <div class="term-form__wrapper">
+              <label class="term-form__radio">
+                <input type="radio" id="Term" value="Да" name="radio2" form="order__cost">
+                <div>
+                  Да
+                </div>
+              </label>
+              <label class="term-form__radio">
+                <input checked type="radio" id="noTerm" value="Нет" name="radio2" form="order__cost">
+                <div>
+                  Нет
+                </div>
+              </label>
+            </div>
+          </div>
+
+          <div class="order__block">
+            <label for="Description">
+              Описание проекта, требования, <br> конкуренты, особые пожелания<span class="necessarily">*</span>
+              <textarea id="Description" cols="40" required form="order__cost" name="Описание"></textarea>
+            </label>
+          </div>
+          <div class="order__block">
+            <label for="name">
+              Промокод
+              <input type="text" id="Promo" form="order__cost" name="Промокод">
+            </label>
+          </div>
+
+          <!-- <div class="order__block">
+            <div class="term-form__title input__question"
+              title="Если у Вас уже подготовлено описание проекта, с которым мы могли бы ознакомиться: краткое техническое задание, креативный бриф - вы можете выслать его нам.">
+              Есть ли у вас техническое задание?<i class="far fa-question-circle"></i></div>
+            <div class="input__wrapper">
+              <input name="file" type="file" name="file"
+                accept="application/pdf,application/msword,	application/vnd.ms-excel,text/plain,	application/zip,application/x-rar-compressed,application/x-7z-compressed"
+                id="input__file" class="input input__file" multiple form="order__cost" >
+              <label for="input__file" class="input__file-button">
+                <span class="input__file-icon-wrapper"><i class="fas fa-cloud-upload-alt"></i></span>
+                <span class="input__file-button-text">Выберите файл</span>
+              </label>
+            </div>
+          </div> -->
+
+        </div>
+
+        <div class="order__button order__display sum-total">
+          <div class="form-attr order-button">
+            <button class="learn-more order-button__width " form="order__cost" type="submit">
+              <span class="circle" aria-hidden="true">
+                <span class="icon arrow"></span>
+              </span>
+              <span class="button-text">Отправить</span>
+            </button>
+          </div>
+        </div>
+        <div class="form-message">
+          <div class="form-message__success">
+            <p class="form-message__text">Ваша заявка успешно отправлена!</p>
+            <i class="fas fa-thumbs-up"></i>
+          </div>
+          <div class="form-message__error">
+            <p class="form-message__text">Ошибка. Сообщение не отправлено!</p> <i
+              class="fas fa-exclamation-triangle"></i>
+          </div>
+        </div>
+      </div>
+
+      <div class=" calc-price">
+        <div class="calc-price__wrapper">
+          <div class="calc-price__title">Сроки</div>
+          <div class="calc-price__text">
+            В среднем, учитывая этап согласования технического задания, внутренние утверждения на стороне клиента и
+            длительность работ по созданию и разработке некоторых элементов сайта, длительность создания сайта может
+            составлять от 2 дней до 3 месяцев. Более подробную информацию, вы можете найти в разделе <a
+              href="services.html">услуги</a> и нажав там на соответствующую карточку.
+          </div>
+        </div>
+        <div class="calc-price__ico1">
+          <i class="far fa-clock"></i>
+        </div>
+      </div>
+
+      <div class="calc-price">
+        <div class="calc-price__ico2">
+          <i class="fas fa-calculator"></i>
+        </div>
+        <div class="calc-price__wrapper">
+          <div class="calc-price__title">Как вычисляется стоимость сайта?</div>
+          <div class="calc-price__text">
+            Сайт — это не баннер и не буклет. Сайт — это проект разной сложности. <br>
+            Цена за сайт начинается с объема дизайна. Что это за сайт? Что включает в себя дизайн сайта стилистически?
+            Сколько у него страниц? Простой ли это сайт в духе минимализма? Будет ли дизайн адаптивен? И прочее. <br>
+            В
+            оценку входит множество разных факторов, на пример, общее время на работу, время на правки (они наверняка
+            будут) и тд.
+          </div>
+        </div>
+      </div>
+
+      <div class="footer">
+        <div class="title">Dima Nikolaenko</div>
+        <div class="desc">Front-end Developer</div>
+        <div class="copyright">&#169 Dima Nikolaenko, 2020</div>
+      </div>
+    </div>
+  </div>
+
+  <script src="/js/jquery.maskedinput.min.js"></script>
+  <script src="/js/main.js"></script>
+  <script src="/js/telegramform.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css"
+        integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
+
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:400,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap&subset=cyrillic" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Pattaya&display=swap&subset=cyrillic" rel="stylesheet">
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+    <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/main.css">
+    <script src="js/loader.js"></script>
+</head>
+
+<body>
+    <div class="wrapper">
+        <aside class="aside">
+            <div class="aside-logo">
+                <a href="index.html" class="logo transition"><i class="fas fa-code"></i>
+                    <h1>
+                        Dima Nikolaenko
+                        <span>Front-end Developer</span>
+                    </h1>
+                </a>
+            </div>
+            <nav class="aside-menu">
+                <ul>
+                    <li><a class="transition" href="index.html">Главная</a></li>
+                    <li><a class="transition" href="about.html">Обо Мне</a></li>
+                    <li class="active"><a class="transition" href="services.html">Услуги</a></li>
+                    <li><a class="transition" href="skills.html">Навыки</a></li>
+                    <li><a class="transition" href="portfolio.html">Портфолио</a></li>
+                    <li><a class="transition" href="price.html">Прайс-лист</a></li>
+                    <li><a class="transition" href="blog.html">Блог</a></li>
+                    <li><a class="transition" href="contact.html">Контакты</a></li>
+                </ul>
+            </nav>
+            <div class="aside-footer">
+                <div class="aside-soc">
+                    <a href=""><i class="fab fa-linkedin-in"></i></a>
+                    <a href=""><i class="fab fa-github"></i></a>
+                    <a href=""><i class="fab fa-instagram"></i></a>
+                </div>
+                <div class="copyright">&#169 Dima Nikolaenko, 2020</div>
+            </div>
+        </aside>
+        <div class="main">
+            <div class="burger"><span class="burger__line burger__menu"></span><span class="burger__close burger__menu burger__noactive"></span></div>
+            <div class="button__top"><i class="fas fa-arrow-circle-up"></i></div>
+            <div class="main_header_name">
+                <span class="heading-meta">Программист</span>
+                <h2>Услуги</h2>
+            </div>
+            <div class="services">
+                <a data-fancybox data-animation-duration="700" data-src="#Landing" href="#Landing">
+                    <div class="service">
+                        <div class="service-img">
+                            <i class="fas fa-sticky-note"></i>
+                        </div>
+                        <div class="service-name">Landing Page</div>
+                        <div class="service-desc">Это посадочная страница для сбора контактов посетителей или продажи
+                            товара. Как правило, это одностраничный сайт, на котором кратко и емко представлена
+                            информация об услуге или товаре, что позволяет повысить эффективность рекламы.</div>
+                        <div style="display: none;" id="Landing" class="animated-modal modal-service">
+                            <div class="modal-service__name">Landing Page</div>
+                            <div class="modal-service__choice">
+                                <div class="modal-service__price">
+                                    Минимальная цена: 100$
+                                </div>
+                                <div class="modal-service__type">
+                                    <ul>
+                                        <li>Статический HTML сайт</li>
+                                        <li>CMS: WordPress</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="modal-service__title">Кому подходит?</div>
+                            <div class="modal-service__text">
+                                Лендинг — это любая страница, которая призывает пользователя что-то сделать.
+                                Например, подписаться на рассылку, купить билет на конференцию, запросить смету или
+                                просто скачать презентацию. Поэтому, если у вас есть бизнес или ваша деятельность
+                                связана с людьми, вам пригодится лендинг. Такие страницы создают для узкой
+                                аудитории. Их эффективно использовать в рекламе и тогда, когда нужно сосредоточиться
+                                на чем-то определенном — продаже, информации, приглашении подписаться на рассылку и
+                                пр.
+                            </div>
+                            <div class="modal-service__title">Возможные целевые действия:</div>
+                            <div class="modal-service__list">
+                                <ul>
+                                    <li>Оформление заявки на лендинге;</li>
+                                    <li>Онлайн-покупка;</li>
+                                    <li>Скачивание файлов или документов;</li>
+                                    <li>Просмотр видео;</li>
+                                    <li>Переход на другие страницы или внешние сайты.</li>
+                                </ul>
+                            </div>
+                            <div class="modal-service__text">
+                                Стоит понимать, что вы сами решаете - какое целевое действие для вас является
+                                ключевым. Для оптовых продаж - это может быть заполнение брифа. А для розничной
+                                сферы это может быть полная онлайн-оплата товара или услуги.
+                            </div>
+                            <div class="modal-service__time"><span>Срок реализации:</span> до 10 дней</div>
+                            <div class="modal-service__title"><i class="fas fa-binoculars"></i></i>Для примера:</div>
+                            <div class="modal-service__example">
+                                <img src="img/service/Landing.png" alt="Landing">
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <a data-fancybox data-animation-duration="700" data-src="#Business" href="#Business">
+                    <div class="service">
+                        <div class="service-img">
+                            <i class="fas fa-id-card"></i>
+                        </div>
+                        <div class="service-name">Сайт визитка</div>
+                        <div class="service-desc">Это электронная «визитная карточка» компании или отдельного человека,
+                            с описанием деятельности. Большинство сайтов-визиток, которые встречаются в Интернете,
+                            состоят из 1-3 отдельных страниц.</div>
+                        <div style="display: none;" id="Business" class="animated-modal modal-service">
+                            <div class="modal-service__name">Сайт визитка</div>
+                            <div class="modal-service__choice">
+                                <div class="modal-service__price">
+                                    Минимальная цена: 150$
+                                </div>
+                                <div class="modal-service__type">
+                                    <ul>
+                                        <li>Статический HTML сайт</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="modal-service__title">Кому подходит?</div>
+                            <div class="modal-service__text">
+                                Сайт-визитка – веб-ресурс для привлечения внимания аудитории к бренду, человеку, услуге,
+                                товару или чему-то ещё. В поддержку любой коммерческой деятельности стоит публиковать
+                                сайт-визитку. Клиника, адвокат, организатор мероприятий, фотограф, строитель,
+                                турагентство, автомастерская, разработчик, дизайнер, модель, клининговая служба, салон
+                                красоты – мизерная часть примеров ниш, которые можно и нужно продвигать с помощью
+                                сайта-визитки.
+                            </div>
+                            <div class="modal-service__title">Что всё это даёт?</div>
+                            <div class="modal-service__text">
+                                Сайт улучшает репутацию бизнеса, популяризует его, увеличивает доходность за счёт
+                                привлечения новых клиентов. Однажды созданный, он будет беспрерывно работать на благо
+                                компании или продвижение личного бренда. Вложения времени и средств в создание визитки
+                                очень быстро окупаются.
+                            </div>
+                            <div class="modal-service__time"><span>Срок реализации:</span> от 10 дней</div>
+                            <div class="modal-service__title"><i class="fas fa-binoculars"></i></i>Для примера:</div>
+                            <div class="modal-service__example">
+                                <img src="img/portfolio/KaiRos.png" alt="Business">
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <a data-fancybox data-animation-duration="700" data-src="#Blog" href="#Blog">
+                    <div class="service">
+                        <div class="service-img">
+                            <i class="fas fa-blog"></i>
+                        </div>
+                        <div class="service-name">Личный блог</div>
+                        <div class="service-desc">Это интернет-ресурс, в котором автор делится своим опытом, идеями,
+                            рассказывает о себе, публикует различный контент. Это отличный способ заявить миру о себе.
+                            Если правильно его создать и вести ответственно, есть перспектива получить огромное
+                            количество подписчиков и завести много полезных знакомств.</div>
+                        <div style="display: none;" id="Blog" class="animated-modal modal-service">
+                            <div class="modal-service__name">Личный блог</div>
+                            <div class="modal-service__choice">
+                                <div class="modal-service__price">
+                                    Минимальная цена: 150$
+                                </div>
+                                <div class="modal-service__type">
+                                    <ul>
+                                        <li>CMS: WordPress</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="modal-service__title">Кому подходит?</div>
+                            <div class="modal-service__text">
+                                Личный блог — это отличный способ заявить миру о себе. Если правильно его создать и
+                                вести ответственно, есть перспектива получить огромное количество подписчиков и завести
+                                много полезных знакомств.
+                            </div>
+                            <div class="modal-service__title">Зачем нужен личный блог?</div>
+                            <div class="modal-service__list">
+                                <ul>
+                                    <li>самопрезентация — человек рассказывает о себе миру;</li>
+                                    <li>коммуникация — с помощью блога его владелец знакомится и общается со множеством
+                                        разных людей, с которыми сложно было бы завести контакт в реальности;</li>
+                                    <li>мемуары — человек просто оставляет заметки, фотографии, видео, связанные с
+                                        определенными моментами его жизни;</li>
+                                    <li>психотерапия — довольно часто блог становится способом выплеска эмоций,
+                                        повествования о волнующих темах;</li>
+                                    <li>развлечение — для некоторых блог становится хобби, которому хочется уделять
+                                        свободное время.</li>
+                                </ul>
+                            </div>
+                            <div class="modal-service__time"><span>Срок реализации:</span> до 14 дней</div>
+                            <div class="modal-service__title"><i class="fas fa-binoculars"></i></i>Для примера:</div>
+                            <div class="modal-service__example">
+                                <img src="img/portfolio/raisanikolka.png" alt="Blog">
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <a data-fancybox data-animation-duration="700" data-src="#Store" href="#Store">
+                    <div class="service">
+                        <div class="service-img">
+                            <i class="fas fa-shopping-cart"></i>
+                        </div>
+                        <div class="service-name">Интернет-магазин</div>
+                        <div class="service-desc">Это сервис, который позволяет совершать покупки в интернете. Это то же
+                            самое, что и обычный магазин. Разница в том, что для покупки не надо никуда идти. Нужно
+                            просто зайти на сайт, выбрать товар, оформить покупку, выбрать способ доставки.</div>
+                        <div style="display: none;" id="Store" class="animated-modal modal-service">
+                            <div class="modal-service__name">Интернет-магазин</div>
+                            <div class="modal-service__choice">
+                                <div class="modal-service__price">
+                                    Минимальная цена: 400$
+                                </div>
+                                <div class="modal-service__type">
+                                    <ul>
+                                        <li>CMS: WordPress</li>
+                                        <li>CMS: OpenCard</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="modal-service__title">Кому подходит?</div>
+                            <div class="modal-service__text">
+                                Интернет-магазин — не корпоративный сайт, который можно рекомендовать практически всем
+                                компаниям. Интернет-магазин в первую очередь полезен владельцам стандартизированных
+                                товаров и услуг. Необходим для тех компании, которые способны продавать свои товары по
+                                каталогам, с организацией доставки. На таком сайте может быть заведено десятки тысяч
+                                товаров, с различными свойствами и фильтрациями по этим свойствам. Оплата товара
+                                различными методами — пластиковыми картами, интернет-деньгами, банковским переводом и
+                                т.д.
+                            </div>
+                            <div class="modal-service__title">Самые востребованные функции интернет-магазина:</div>
+                            <div class="modal-service__list">
+                                <ul>
+                                    <li>Блоки: избранное, популярное, скидки — на главной странице;</li>
+                                    <li>Заказ товара в один клик (без регистрации);</li>
+                                    <li>Фильтры товара по категории и цене.</li>
+                                </ul>
+                            </div>
+                            <div class="modal-service__text">
+                                У интернет-магазина могут быть самые разные функции, что конечно влияет на цену и сроки
+                                создания интернет-магазина.
+                            </div>
+                            <div class="modal-service__time"><span>Срок реализации:</span> от 7 дней до 3 месяцев</div>
+                        </div>
+                    </div>
+                </a>
+                <a data-fancybox data-animation-duration="700" data-src="#Corporate" href="#Corporate">
+                    <div class="service">
+                        <div class="service-img">
+                            <i class="fas fa-laptop"></i>
+                        </div>
+                        <div class="service-name">Корпоративный сайт</div>
+                        <div class="service-desc">Это интернет-ресурс, на котором представлена подробная информация о
+                            деятельности организации или предприятия: описание услуг, история развития, условия
+                            сотрудничества, онлайн-сервисы, открытые вакансии, интересные предложения, новости и прочие
+                            факты и события, отражающие деятельность компании.</div>
+                        <div style="display: none;" id="Corporate" class="animated-modal modal-service">
+                            <div class="modal-service__name">Корпоративный сайт</div>
+                            <div class="modal-service__choice">
+                                <div class="modal-service__price">
+                                    Минимальная цена: 300$
+                                </div>
+                                <div class="modal-service__type">
+                                    <ul>
+                                        <li>CMS: WordPress</li>
+                                        <li>Django</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="modal-service__title">Кому подходит?</div>
+                            <div class="modal-service__text">
+                                Корпоративный сайт – лицо бизнеса в интернете. Это первое, что видит потенциальный
+                                клиент, когда приходит из поиска, социальных сетей или контекстной рекламы. Является
+                                необходимым атрибутом среднего и крупного бизнеса.
+                            </div>
+                            <div class="modal-service__title">Корпоративный сайт решает следующие задачи:</div>
+                            <div class="modal-service__list">
+                                <ul>
+                                    <li>круглосуточное предоставление подробной информации о компании и ее услугах;</li>
+                                    <li>своевременное информирование посетителей о новостях и специальных акциях
+                                        компании;</li>
+                                    <li>расширение базы клиентов;</li>
+                                    <li>интерактивное общение с клиентами и посетителями (опросы, вопросы-ответы,
+                                        форум);</li>
+                                    <li>возможность круглосуточного заказа товаров и услуг через сайт;</li>
+                                    <li>раскрутка имени компании и многое другое.</li>
+                                </ul>
+                            </div>
+                            <div class="modal-service__text">
+                                От одностраничного сайта или лендинга корпоративный сайт отличается многоуровневой
+                                структурой и большими объемами информации.
+                            </div>
+                            <div class="modal-service__time"><span>Срок реализации:</span> от 14 дней до 3 месяцев</div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="footer">
+                <div class="title">Dima Nikolaenko</div>
+                <div class="desc">Front-end Developer</div>
+                <div class="copyright">&#169 Dima Nikolaenko, 2020</div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>

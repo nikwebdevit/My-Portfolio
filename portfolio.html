@@ -1,0 +1,839 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css"
+        integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
+
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:400,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap&subset=cyrillic" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Pattaya&display=swap&subset=cyrillic" rel="stylesheet">
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+    <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/main.css">
+    <script src="js/loader.js"></script>
+</head>
+
+<body>
+    <div class="wrapper">
+        <aside class="aside">
+            <div class="aside-logo">
+                <a href="index.html" class="logo transition"><i class="fas fa-code"></i>
+                    <h1>
+                        Dima Nikolaenko
+                        <span>Front-end Developer</span>
+                    </h1>
+                </a>
+            </div>
+            <nav class="aside-menu">
+                <ul>
+                    <li><a class="transition" href="index.html">Главная</a></li>
+                    <li><a class="transition" href="about.html">Обо Мне</a></li>
+                    <li><a class="transition" href="services.html">Услуги</a></li>
+                    <li><a class="transition" href="skills.html">Навыки</a></li>
+                    <li class="active"><a class="transition" href="portfolio.html">Портфолио</a></li>
+                    <li><a class="transition" href="price.html">Прайс-лист</a></li>
+                    <li><a class="transition" href="blog.html">Блог</a></li>
+                    <li><a class="transition" href="contact.html">Контакты</a></li>
+                </ul>
+            </nav>
+            <div class="aside-footer">
+                <div class="aside-soc">
+                    <a href=""><i class="fab fa-linkedin-in"></i></a>
+                    <a href=""><i class="fab fa-github"></i></a>
+                    <a href=""><i class="fab fa-instagram"></i></a>
+                </div>
+                <div class="copyright">&#169 Dima Nikolaenko, 2020</div>
+            </div>
+        </aside>
+        <div class="main">
+            <div class="burger"><span class="burger__line burger__menu"></span><span class="burger__close burger__menu burger__noactive"></span></div>
+            <div class="button__top"><i class="fas fa-arrow-circle-up"></i></div>
+            <div class="main_header_name">
+                <span class="heading-meta">Читать</span>
+                <h2>Портфолио</h2>
+            </div>
+            <div class="wrapper_portfolio">
+                <div class="portfolio" data-port="GeeKITNik">
+                    <a data-fancybox data-animation-duration="700" data-src="#work6" href="" class="portfolio-button__open">
+                        <img src="img/portfolio/GeekITNik.png" alt="">
+                    </a>
+                    <div class="portfolio-innertop">
+                        <div class="portfolio-name">
+                            GeeKITNik
+                        </div>
+                        <div class="portfolio-skill">
+                            Личный блог
+                        </div>
+                    </div>
+                    <div class="portfolio-innerbottom">
+                        <a href="#" class='portfolio-button'>
+                            GitHub
+                        </a>
+                        <a data-fancybox data-animation-duration="700" data-src="#work6" href=""
+                            class='portfolio-button portfolio-button__open'>
+                            Подробнее
+                        </a>
+                    </div>
+                    <div style="display: none;" id="work6" class="animated-modal animated-modal_portfolio">
+                        <div class="modal_port-header">
+                            <div class="header-block">
+                                <div class="block-top">
+                                    <i class="far fa-id-card"></i> Сайт:
+                                </div>
+                                <div class="block-bottom">
+                                    <a href="www.example.com" target="_blank">www.example.com</a>
+                                </div>
+                            </div>
+                            <div class="header-block">
+                                <div class="block-top">
+                                    <i class="far fa-calendar-alt"></i> Время выполнения:
+                                </div>
+                                <div class="block-bottom">
+                                    18 дней
+                                </div>
+                            </div>
+                            <div class="header-block">
+                                <div class="block-top">
+                                    <i class="fas fa-shopping-cart"></i> Тип работ:
+                                </div>
+                                <div class="block-bottom">
+                                    Личный блог
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="modal_port-main">
+                            <div class="main-example">
+                                <div class="example-view">
+                                    <img src="img/portfolio/cover/GeekITNik-desktop.png" alt=""
+                                        class="example-view__img example-active example-img example-view__img1">
+                                    <img src="img/portfolio/cover/GeekITNik-tablet.png" alt=""
+                                        class="example-view__img  example-img example-view__img2">
+                                    <img src="img/portfolio/cover/GeekITNik-mobile.png" alt=""
+                                        class="example-view__img  example-img example-view__img3">
+                                </div>
+                                <div class="example-choice">
+                                    <a href="" class="example-view__button active example-view__button1" data-num='1'><i class="fas fa-desktop"></i></a>
+                                    <a href="" class="example-view__button example-view__button2" data-num='2'><i class="fas fa-tablet-alt"></i></a>
+                                    <a href="" class="example-view__button example-view__button3" data-num='3'><i class="fas fa-mobile-alt"></i></a>
+                                </div>
+                            </div>
+                            <div class="main-tasks">
+                                <div class="tasks-name">
+                                    Задача
+                                </div>
+                                <ul>
+                                    <li>улучшить дизайн и интерфейс сайта;</li>
+                                    <li>оптимизировать сайт под современные браузеры;</li>
+                                    <li>разработать адаптивный дизайн для всех страниц;</li>
+                                    <li>перенести имеющуюся информацию и разработать новые оригинальные тексты;</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="modal_port-adaptresult"><img src="img/portfolio/Adaptivator/KaiRos_A.png" alt="">
+                        </div>
+
+                        <div class="modal_port-work">
+                            <div class="main-work">
+                                <div class="tasks-name">
+                                    Технологии
+                                </div>
+                                <ul>
+                                    <li>HTML</li>
+                                    <li>CSS</li>
+                                    <li>JS</li>
+                                    <li>Django</li>
+                                </ul>
+                            </div>
+                            <div class="detail-color">
+                                <div class="tasks-name">
+                                    Цвета
+                                </div>
+                                <div class="wrapper_color">
+                                    <div>
+                                        <div class="color" style="background-color: #bd5501;"></div>
+                                        <div class="color-number">#bd5501</div>
+                                    </div>
+                                    <div>
+                                        <div class="color" style="background-color: #fff;"></div>
+                                        <div class="color-number">#ffffff</div>
+                                    </div>
+                                    <div>
+                                        <div class="color" style="background-color: #000;"></div>
+                                        <div class="color-number">#000000</div>
+                                    </div>
+                                    <div>
+                                        <div class="color" style="background-color: #05b8a0;"></div>
+                                        <div class="color-number">#05b8a0</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="modal_port-work">
+                            <div class="wrapper-work">
+                                <img src="img/portfolio/GeekITNik.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="portfolio" data-port="Kairos">
+                    <a data-fancybox data-animation-duration="700" data-src="#work5" href="" class="portfolio-button__open">
+                        <img src="img/portfolio/KaiRos.png" alt="">
+                    </a>
+                    <div class="portfolio-innertop">
+                        <div class="portfolio-name">
+                            Kairos
+                        </div>
+                        <div class="portfolio-skill">
+                            Сайт визитка
+                        </div>
+                    </div>
+                    <div class="portfolio-innerbottom">
+                        <a href="#" class='portfolio-button'>
+                            GitHub
+                        </a>
+                        <a data-fancybox data-animation-duration="700" data-src="#work5" href=""
+                            class='portfolio-button portfolio-button__open'>
+                            Подробнее
+                        </a>
+                    </div>
+                    <div style="display: none;" id="work5" class="animated-modal animated-modal_portfolio">
+                        <div class="modal_port-header">
+                            <div class="header-block">
+                                <div class="block-top">
+                                    <i class="far fa-id-card"></i> Сайт:
+                                </div>
+                                <div class="block-bottom">
+                                    <a href="www.example.com" target="_blank">www.example.com</a>
+                                </div>
+                            </div>
+                            <div class="header-block">
+                                <div class="block-top">
+                                    <i class="far fa-calendar-alt"></i> Время выполнения:
+                                </div>
+                                <div class="block-bottom">
+                                    5 дней
+                                </div>
+                            </div>
+                            <div class="header-block">
+                                <div class="block-top">
+                                    <i class="fas fa-shopping-cart"></i> Тип работ:
+                                </div>
+                                <div class="block-bottom">
+                                    Сайт визитка
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="modal_port-main">
+                            <div class="main-example">
+                                <div class="example-view">
+                                    <img src="img/portfolio/cover/kairos-desktop.png" alt=""
+                                        class="example-view__img example-active example-img example-view__img1">
+                                    <img src="img/portfolio/cover/kairos-tablet.png" alt=""
+                                        class="example-view__img  example-img example-view__img2">
+                                    <img src="img/portfolio/cover/kairos-mobile.png" alt=""
+                                        class="example-view__img  example-img example-view__img3">
+                                </div>
+                                <div class="example-choice">
+                                    <a href="" class="example-view__button active example-view__button1" data-num='1'><i class="fas fa-desktop"></i></a>
+                                    <a href="" class="example-view__button example-view__button2" data-num='2'><i class="fas fa-tablet-alt"></i></a>
+                                    <a href="" class="example-view__button example-view__button3" data-num='3'><i class="fas fa-mobile-alt"></i></a>
+                                </div>
+                            </div>
+                            <div class="main-tasks">
+                                <div class="tasks-name">
+                                    Задача
+                                </div>
+                                <ul>
+                                    <li>улучшить дизайн и интерфейс сайта;</li>
+                                    <li>оптимизировать сайт под современные браузеры;</li>
+                                    <li>разработать адаптивный дизайн для всех страниц;</li>
+                                    <li>перенести имеющуюся информацию и разработать новые оригинальные тексты;</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="modal_port-adaptresult"><img src="img/portfolio/Adaptivator/KaiRos_A.png" alt="">
+                        </div>
+
+                        <div class="modal_port-work">
+                            <div class="main-work">
+                                <div class="tasks-name">
+                                    Технологии
+                                </div>
+                                <ul>
+                                    <li>HTML</li>
+                                    <li>CSS</li>
+                                    <li>JS</li>
+                                    <li>PHP</li>
+                                </ul>
+                            </div>
+                            <div class="detail-color">
+                                <div class="tasks-name">
+                                    Цвета
+                                </div>
+                                <div class="wrapper_color">
+                                    <div>
+                                        <div class="color" style="background-color: #9b6e51;"></div>
+                                        <div class="color-number">#9b6e51</div>
+                                    </div>
+                                    <div>
+                                        <div class="color" style="background-color: #222222;"></div>
+                                        <div class="color-number">#222222</div>
+                                    </div>
+                                    <div>
+                                        <div class="color" style="background-color: #f5f6f6;"></div>
+                                        <div class="color-number">#f5f6f6</div>
+                                    </div>
+                                    <div>
+                                        <div class="color" style="background-color: #c4302b;"></div>
+                                        <div class="color-number">#c4302b</div>
+                                    </div>
+                                    <div>
+                                        <div class="color" style="background-color: #000;"></div>
+                                        <div class="color-number">#000000</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="modal_port-work">
+                            <div class="wrapper-work">
+                                <img src="img/portfolio/KaiRos.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio" data-port="Temari Blog">
+                    <a data-fancybox data-animation-duration="700" data-src="#work4" href="" class="portfolio-button__open">
+                        <img src="img/portfolio/raisanikolka.png" alt="">
+                    </a>
+                    <div class="portfolio-innertop">
+                        <div class="portfolio-name">
+                            Temari Blog
+                        </div>
+                        <div class="portfolio-skill">
+                            Личный блог
+                        </div>
+                    </div>
+                    <div class="portfolio-innerbottom">
+                        <a href="#" class='portfolio-button'>
+                            GitHub
+                        </a>
+                        <a data-fancybox data-animation-duration="700" data-src="#work4" href=""
+                            class='portfolio-button portfolio-button__open'>
+                            Подробнее
+                        </a>
+                    </div>
+                    <div style="display: none;" id="work4" class="animated-modal animated-modal_portfolio">
+                        <div class="modal_port-header">
+                            <div class="header-block">
+                                <div class="block-top">
+                                    <i class="far fa-id-card"></i> Сайт:
+                                </div>
+                                <div class="block-bottom">
+                                    <a href="www.example.com" target="_blank">www.example.com</a>
+                                </div>
+                            </div>
+                            <div class="header-block">
+                                <div class="block-top">
+                                    <i class="far fa-calendar-alt"></i> Время выполнения:
+                                </div>
+                                <div class="block-bottom">
+                                    14 дней
+                                </div>
+                            </div>
+                            <div class="header-block">
+                                <div class="block-top">
+                                    <i class="fas fa-shopping-cart"></i> Тип работ:
+                                </div>
+                                <div class="block-bottom">
+                                    Личный блог
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="modal_port-main">
+                            <div class="main-example">
+                                <div class="example-view">
+                                    <img src="img/portfolio/cover/RaisaNikolka-desktop.png" alt=""
+                                        class="example-view__img example-active example-img example-view__img1">
+                                    <img src="img/portfolio/cover/RaisaNikolka-tablet.png" alt=""
+                                        class="example-view__img  example-img example-view__img2">
+                                    <img src="img/portfolio/cover/RaisaNikolka -mobile.png" alt=""
+                                        class="example-view__img  example-img example-view__img3">
+                                </div>
+                                <div class="example-choice">
+                                    <a href="" class="example-view__button active example-view__button1" data-num='1'><i class="fas fa-desktop"></i></a>
+                                    <a href="" class="example-view__button example-view__button2" data-num='2'><i class="fas fa-tablet-alt"></i></a>
+                                    <a href="" class="example-view__button example-view__button3" data-num='3'><i class="fas fa-mobile-alt"></i></a>
+                                </div>
+                            </div>
+                            <div class="main-tasks">
+                                <div class="tasks-name">
+                                    Задача
+                                </div>
+                                <ul>
+                                    <li>улучшить дизайн и интерфейс сайта;</li>
+                                    <li>оптимизировать сайт под современные браузеры;</li>
+                                    <li>разработать адаптивный дизайн для всех страниц;</li>
+                                    <li>перенести имеющуюся информацию и разработать новые оригинальные тексты;</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="modal_port-adaptresult"><img src="img/portfolio/Adaptivator/RaisaNikolka_A.png" alt="">
+                        </div>
+
+                        <div class="modal_port-work">
+                            <div class="main-work">
+                                <div class="tasks-name">
+                                    Технологии
+                                </div>
+                                <ul>
+                                    <li>HTML</li>
+                                    <li>CSS</li>
+                                    <li>JS</li>
+                                    <li>WordPress</li>
+                                </ul>
+                            </div>
+                            <div class="detail-color">
+                                <div class="tasks-name">
+                                    Цвета
+                                </div>
+                                <div class="wrapper_color">
+                                    <div>
+                                        <div class="color" style="background-color: #9b6e51;"></div>
+                                        <div class="color-number">#eab883</div>
+                                    </div>
+                                    <div>
+                                        <div class="color" style="background-color: #96443c;"></div>
+                                        <div class="color-number">#96443c</div>
+                                    </div>
+                                    <div>
+                                        <div class="color" style="background-color: #e2e2e2;"></div>
+                                        <div class="color-number">#e2e2e2</div>
+                                    </div>
+                                    <div>
+                                        <div class="color" style="background-color: #c4302b;"></div>
+                                        <div class="color-number">#c4302b</div>
+                                    </div>
+                                    <div>
+                                        <div class="color" style="background-color: #C44737;"></div>
+                                        <div class="color-number">#C44737</div>
+                                    </div>
+                                    <div>
+                                        <div class="color" style="background-color: #800080;"></div>
+                                        <div class="color-number">#800080</div>
+                                    </div>
+                                    <div>
+                                        <div class="color" style="background-color: #000;"></div>
+                                        <div class="color-number">#000000</div>
+                                    </div>
+                                    <div>
+                                        <div class="color" style="background-color: #fff;"></div>
+                                        <div class="color-number">#ffffff</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="modal_port-work">
+                            <div class="wrapper-work">
+                                <img src="img/portfolio/raisanikolka.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio" data-port="Pink">
+                    <a data-fancybox data-animation-duration="700" data-src="#work3" href="" class="portfolio-button__open">
+                        <img src="img/portfolio/pink.png" alt="">
+                    </a>
+                    <div class="portfolio-innertop">
+                        <div class="portfolio-name">
+                            Pink
+                        </div>
+                        <div class="portfolio-skill">
+                            Landing Page
+                        </div>
+                    </div>
+                    <div class="portfolio-innerbottom">
+                        <a href="#" class='portfolio-button'>
+                            GitHub
+                        </a>
+                        <a data-fancybox data-animation-duration="700" data-src="#work3" href=""
+                            class='portfolio-button portfolio-button__open'>
+                            Подробнее
+                        </a>
+                    </div>
+                    <div style="display: none;" id="work3" class="animated-modal animated-modal_portfolio">
+                        <div class="modal_port-header">
+                            <div class="header-block">
+                                <div class="block-top">
+                                    <i class="far fa-id-card"></i> Сайт:
+                                </div>
+                                <div class="block-bottom">
+                                    <a href="www.example.com" target="_blank">www.example.com</a>
+                                </div>
+                            </div>
+                            <div class="header-block">
+                                <div class="block-top">
+                                    <i class="far fa-calendar-alt"></i> Время выполнения:
+                                </div>
+                                <div class="block-bottom">
+                                    4 дня
+                                </div>
+                            </div>
+                            <div class="header-block">
+                                <div class="block-top">
+                                    <i class="fas fa-shopping-cart"></i> Тип работ:
+                                </div>
+                                <div class="block-bottom">
+                                    Landing Page
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="modal_port-main">
+                            <div class="main-example">
+                                <div class="example-view">
+                                    <img src="img/portfolio/cover/Pink-desktop.png" alt=""
+                                        class="example-view__img example-active example-img example-view__img1">
+                                    <img src="img/portfolio/cover/Pink-tablet.png" alt=""
+                                        class="example-view__img  example-img example-view__img2">
+                                    <img src="img/portfolio/cover/RaisaNikolka -mobile.png" alt=""
+                                        class="example-view__img  example-img example-view__img3">
+                                </div>
+                                <div class="example-choice">
+                                    <a href="" class="example-view__button active example-view__button1" data-num='1'><i class="fas fa-desktop"></i></a>
+                                    <a href="" class="example-view__button example-view__button2" data-num='2'><i class="fas fa-tablet-alt"></i></a>
+                                    <a href="" class="example-view__button example-view__button3" data-num='3'><i class="fas fa-mobile-alt"></i></a>
+                                </div>
+                            </div>
+                            <div class="main-tasks">
+                                <div class="tasks-name">
+                                    Задача
+                                </div>
+                                <ul>
+                                    <li>улучшить дизайн и интерфейс сайта;</li>
+                                    <li>оптимизировать сайт под современные браузеры;</li>
+                                    <li>разработать адаптивный дизайн для всех страниц;</li>
+                                    <li>перенести имеющуюся информацию и разработать новые оригинальные тексты;</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="modal_port-adaptresult"><img src="img/portfolio/Adaptivator/Pink_A.png" alt="">
+                        </div>
+
+                        <div class="modal_port-work">
+                            <div class="main-work">
+                                <div class="tasks-name">
+                                    Технологии
+                                </div>
+                                <ul>
+                                    <li>HTML</li>
+                                    <li>CSS</li>
+                                    <li>JS</li>
+                                </ul>
+                            </div>
+                            <div class="detail-color">
+                                <div class="tasks-name">
+                                    Цвета
+                                </div>
+                                <div class="wrapper_color">
+                                    <div>
+                                        <div class="color" style="background-color: #d22856;"></div>
+                                        <div class="color-number">#d22856</div>
+                                    </div>
+                                    <div>
+                                        <div class="color" style="background-color: #f2f2f2;"></div>
+                                        <div class="color-number">#f2f2f2</div>
+                                    </div>
+                                    <div>
+                                        <div class="color" style="background-color: #fff;"></div>
+                                        <div class="color-number">#ffffff</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="modal_port-work">
+                            <div class="wrapper-work">
+                                <img src="img/portfolio/pink.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio" data-port="Friends Family">
+                    <a data-fancybox data-animation-duration="700" data-src="#work2" href="" class="portfolio-button__open">
+                        <img src="img/portfolio/friendsFamily.png" alt="">
+                    </a>
+                    <div class="portfolio-innertop">
+                        <div class="portfolio-name">
+                            Friends Family
+                        </div>
+                        <div class="portfolio-skill">
+                            Сайт визитка
+                        </div>
+                    </div>
+                    <div class="portfolio-innerbottom">
+                        <a href="#" class='portfolio-button'>
+                            GitHub
+                        </a>
+                        <a data-fancybox data-animation-duration="700" data-src="#work2" href=""
+                            class='portfolio-button portfolio-button__open'>
+                            Подробнее
+                        </a>
+                    </div>
+                    <div style="display: none;" id="work2" class="animated-modal animated-modal_portfolio">
+                        <div class="modal_port-header">
+                            <div class="header-block">
+                                <div class="block-top">
+                                    <i class="far fa-id-card"></i> Сайт:
+                                </div>
+                                <div class="block-bottom">
+                                    <a href="www.example.com" target="_blank">www.example.com</a>
+                                </div>
+                            </div>
+                            <div class="header-block">
+                                <div class="block-top">
+                                    <i class="far fa-calendar-alt"></i> Время выполнения:
+                                </div>
+                                <div class="block-bottom">
+                                    2 дня
+                                </div>
+                            </div>
+                            <div class="header-block">
+                                <div class="block-top">
+                                    <i class="fas fa-shopping-cart"></i> Тип работ:
+                                </div>
+                                <div class="block-bottom">
+                                    Сайт визитка
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="modal_port-main">
+                            <div class="main-example">
+                                <div class="example-view">
+                                    <img src="img/portfolio/cover/FF-desktop.png" alt=""
+                                        class="example-view__img example-active example-img example-view__img1">
+                                    <img src="img/portfolio/cover/FF-tablet.png" alt=""
+                                        class="example-view__img  example-img example-view__img2">
+                                    <img src="img/portfolio/cover/FF-mobile.png" alt=""
+                                        class="example-view__img  example-img example-view__img3">
+                                </div>
+                                <div class="example-choice">
+                                    <a href="" class="example-view__button active example-view__button1" data-num='1'><i class="fas fa-desktop"></i></a>
+                                    <a href="" class="example-view__button example-view__button2" data-num='2'><i class="fas fa-tablet-alt"></i></a>
+                                    <a href="" class="example-view__button example-view__button3" data-num='3'><i class="fas fa-mobile-alt"></i></a>
+                                </div>
+                            </div>
+                            <div class="main-tasks">
+                                <div class="tasks-name">
+                                    Задача
+                                </div>
+                                <ul>
+                                    <li>улучшить дизайн и интерфейс сайта;</li>
+                                    <li>оптимизировать сайт под современные браузеры;</li>
+                                    <li>разработать адаптивный дизайн для всех страниц;</li>
+                                    <li>перенести имеющуюся информацию и разработать новые оригинальные тексты;</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="modal_port-adaptresult"><img src="img/portfolio/Adaptivator/KaiRos_A.png" alt="">
+                        </div>
+
+                        <div class="modal_port-work">
+                            <div class="main-work">
+                                <div class="tasks-name">
+                                    Технологии
+                                </div>
+                                <ul>
+                                    <li>HTML</li>
+                                    <li>CSS</li>
+                                    <li>JS</li>
+                                    <li>PHP</li>
+                                </ul>
+                            </div>
+                            <div class="detail-color">
+                                <div class="tasks-name">
+                                    Цвета
+                                </div>
+                                <div class="wrapper_color">
+                                    <div>
+                                        <div class="color" style="background-color: #ff5b97;"></div>
+                                        <div class="color-number">#ff5b97</div>
+                                    </div>
+                                    <div>
+                                        <div class="color" style="background-color: #fff;"></div>
+                                        <div class="color-number">#ffffff</div>
+                                    </div>
+                                    <div>
+                                        <div class="color" style="background-color: #000;"></div>
+                                        <div class="color-number">#000000</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="modal_port-work">
+                            <div class="wrapper-work">
+                                <img src="img/portfolio/friendsFamily.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio" data-port="PCHelper">
+                    <a data-fancybox data-animation-duration="700" data-src="#work1" href="" class="portfolio-button__open">
+                        <img src="img/portfolio/pchelper.png" alt="">
+                    </a>
+                    <div class="portfolio-innertop">
+                        <div class="portfolio-name">
+                            PCHelper
+                        </div>
+                        <div class="portfolio-skill">
+                            Сайт визитка
+                        </div>
+                    </div>
+                    <div class="portfolio-innerbottom">
+                        <a href="#" class='portfolio-button'>
+                            GitHub
+                        </a>
+                        <a data-fancybox data-animation-duration="700" data-src="#work1" href=""
+                            class='portfolio-button portfolio-button__open'>
+                            Подробнее
+                        </a>
+                    </div>
+                    <div style="display: none;" id="work1" class="animated-modal animated-modal_portfolio">
+                        <div class="modal_port-header">
+                            <div class="header-block">
+                                <div class="block-top">
+                                    <i class="far fa-id-card"></i> Сайт:
+                                </div>
+                                <div class="block-bottom">
+                                    <a href="www.example.com" target="_blank">www.example.com</a>
+                                </div>
+                            </div>
+                            <div class="header-block">
+                                <div class="block-top">
+                                    <i class="far fa-calendar-alt"></i> Время выполнения:
+                                </div>
+                                <div class="block-bottom">
+                                    4 дня
+                                </div>
+                            </div>
+                            <div class="header-block">
+                                <div class="block-top">
+                                    <i class="fas fa-shopping-cart"></i> Тип работ:
+                                </div>
+                                <div class="block-bottom">
+                                    Сайт визитка
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="modal_port-main">
+                            <div class="main-example">
+                                <div class="example-view">
+                                    <img src="img/portfolio/cover/PCHELPER-desktop.png" alt=""
+                                        class="example-view__img example-active example-img example-view__img1">
+                                    <img src="img/portfolio/cover/PCHELPER-tablet.png" alt=""
+                                        class="example-view__img  example-img example-view__img2">
+                                    <img src="img/portfolio/cover/PCHELPER -mobile.png" alt=""
+                                        class="example-view__img  example-img example-view__img3">
+                                </div>
+                                <div class="example-choice">
+                                    <a href="" class="example-view__button active example-view__button1" data-num='1'><i class="fas fa-desktop"></i></a>
+                                    <a href="" class="example-view__button example-view__button2" data-num='2'><i class="fas fa-tablet-alt"></i></a>
+                                    <a href="" class="example-view__button example-view__button3" data-num='3'><i class="fas fa-mobile-alt"></i></a>
+                                </div>
+                            </div>
+                            <div class="main-tasks">
+                                <div class="tasks-name">
+                                    Задача
+                                </div>
+                                <ul>
+                                    <li>улучшить дизайн и интерфейс сайта;</li>
+                                    <li>оптимизировать сайт под современные браузеры;</li>
+                                    <li>разработать адаптивный дизайн для всех страниц;</li>
+                                    <li>перенести имеющуюся информацию и разработать новые оригинальные тексты;</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="modal_port-adaptresult"><img src="img/portfolio/Adaptivator/RaisaNikolka_A.png" alt="">
+                        </div>
+
+                        <div class="modal_port-work">
+                            <div class="main-work">
+                                <div class="tasks-name">
+                                    Технологии
+                                </div>
+                                <ul>
+                                    <li>HTML</li>
+                                    <li>CSS</li>
+                                    <li>JS</li>
+                                    <li>PHP</li>
+                                </ul>
+                            </div>
+                            <div class="detail-color">
+                                <div class="tasks-name">
+                                    Цвета
+                                </div>
+                                <div class="wrapper_color">
+                                    <div>
+                                        <div class="color" style="background-color: #f95305;"></div>
+                                        <div class="color-number">#f95305</div>
+                                    </div>
+                                    <div>
+                                        <div class="color" style="background-color: #fff;"></div>
+                                        <div class="color-number">#ffffff</div>
+                                    </div>
+                                    <div>
+                                        <div class="color" style="background-color: #000;"></div>
+                                        <div class="color-number">#000000</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="modal_port-work">
+                            <div class="wrapper-work">
+                                <img src="img/portfolio/pchelper.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="footer">
+                <div class="title">Dima Nikolaenko</div>
+                <div class="desc">Front-end Developer</div>
+                <div class="copyright">&#169 Dima Nikolaenko, 2020</div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css"
+        integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
+
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:400,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap&subset=cyrillic" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Pattaya&display=swap&subset=cyrillic" rel="stylesheet">
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+    <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/main.css">
+    <script src="js/loader.js"></script>
+</head>
+
+<body>
+    <div class="wrapper">
+        <aside class="aside">
+            <div class="aside-logo">
+                <a href="index.html" class="logo transition"><i class="fas fa-code"></i>
+                    <h1>
+                        Dima Nikolaenko
+                        <span>Front-end Developer</span>
+                    </h1>
+                </a>
+            </div>
+            <nav class="aside-menu">
+                <ul>
+                    <li><a class="transition" href="index.html">Главная</a></li>
+                    <li><a class="transition" href="about.html">Обо Мне</a></li>
+                    <li><a class="transition" href="services.html">Услуги</a></li>
+                    <li class="active"><a class="transition" href="skills.html">Навыки</a></li>
+                    <li><a class="transition" href="portfolio.html">Портфолио</a></li>
+                    <li><a class="transition" href="price.html">Прайс-лист</a></li>
+                    <li><a class="transition" href="blog.html">Блог</a></li>
+                    <li><a class="transition" href="contact.html">Контакты</a></li>
+                </ul>
+            </nav>
+            <div class="aside-footer">
+                <div class="aside-soc">
+                    <a href=""><i class="fab fa-linkedin-in"></i></a>
+                    <a href=""><i class="fab fa-github"></i></a>
+                    <a href=""><i class="fab fa-instagram"></i></a>
+                </div>
+                <div class="copyright">&#169 Dima Nikolaenko, 2020</div>
+            </div>
+        </aside>
+        <div class="main">
+            <div class="burger"><span class="burger__line burger__menu"></span><span class="burger__close burger__menu burger__noactive"></span></div>
+            <div class="button__top"><i class="fas fa-arrow-circle-up"></i></div>
+            <div class="main_header_name">
+                <span class="heading-meta">Читать</span>
+                <h2>Навыки</h2>
+            </div>
+            <div class="skills">
+                <a data-fancybox data-animation-duration="700" data-src="#skill1" href="">
+                    <div class="skill-box">
+                        <div class="skill-img">
+                            <i class="fas fa-cut"></i>
+                        </div>
+                        <div class="skill-name">
+                            Дизайн
+                        </div>
+                        <div class="skill-text">
+                            Figma <br>
+                            Adobe Photoshop
+                        </div>
+                    </div>
+                </a>
+                <div style="display: none;" id="skill1" class="animated-modal modal-skill">
+                    <div class="modal-skill__name">Дизайн</div>
+                    <div class="modal-skill__wrapper">
+                        <div class="modal-skill__item">
+                            <div class="modal-skill__title">Figma</div>
+                            <div class="modal-skill__desc">Это кросс-платформенный онлайн-сервис для дизайнеров интерфейсов и веб-разработчиков. Figma позволяет разрабатывать интерфейсы в онлайн-приложении. У Figma две ключевые особенности: доступ к макету прямо из окна браузера и возможность совместной работы над документами.</div>
+                            <div class="wrapper_bar">
+                                <div class="skill-bar figma"></div>
+                                <span class="text figma" data-width="25%"></span>
+                            </div>
+                        </div>
+                        <div class="modal-skill__item">
+                            <div class="modal-skill__title">Adobe Photoshop</div>
+                            <div class="modal-skill__desc">Это многофункциональный графический редактор. В основном работает с
+                                растровыми изображениями, однако имеет некоторые векторные инструменты. Отлично подходит для работы с макетами и разработки веб-приложений.</div>
+                            <div class="wrapper_bar">
+                                <div class="skill-bar photoshop"></div>
+                                <span class="text photoshop" data-width="35%"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <a data-fancybox data-animation-duration="700" data-src="#skill2" href="">
+                    <div class="skill-box">
+                        <div class="skill-img">
+                            <i class="fas fa-cogs"></i>
+                        </div>
+                        <div class="skill-name">
+                            Programming
+                        </div>
+                        <div class="skill-text">
+                            JavaScript <br>
+                            Python <br>
+                            Git <br>
+                            Gulp / Webpack <br>
+                            SQL <br>
+                            PHP
+                        </div>
+                    </div>
+                </a>
+                <div style="display: none;" id="skill2" class="animated-modal modal-skill">
+                    <div class="modal-skill__name">Programming</div>
+                    <div class="modal-skill__wrapper">
+                        <div class="modal-skill__item">
+                            <div class="modal-skill__title">JavaScript</div>
+                            <div class="modal-skill__desc">Это язык программирования, создан, чтобы «сделать веб-страницы живыми». Например, в браузере JavaScript может: добавлять новый HTML-код на страницу, изменять существующее содержимое, модифицировать стили, также может реагировать на действия пользователя, щелчки мыши, перемещения указателя, нажатия клавиш и многое другое.</div>
+                            <div class="wrapper_bar">
+                                <div class="skill-bar javascript"></div>
+                                <span class="text javascript" data-width="60%"></span>
+                            </div>
+                        </div>
+                        <div class="modal-skill__item">
+                            <div class="modal-skill__title">Python</div>
+                            <div class="modal-skill__desc">Это язык программирования, который входит в число самых популярных на рынке IT. Его используют для создания разных продуктов, от коммерческих до научных. На нем пишут плагины и сценарии. С его помощью сисадмины автоматизируют выполнение серверных задач. Язык помогает создавать приложения, сайты, ботов, онлайн-игры и многое другое.</div>
+                            <div class="wrapper_bar">
+                                <div class="skill-bar python"></div>
+                                <span class="text python" data-width="45%"></span>
+                            </div>
+                        </div>
+                        <div class="modal-skill__item">
+                            <div class="modal-skill__title">Git</div>
+                            <div class="modal-skill__desc">Это распределённая система управления версиями, которая даёт возможность разработчикам отслеживать изменения в файлах и работать совместно с другими разработчиками.</div>
+                            <div class="wrapper_bar">
+                                <div class="skill-bar git"></div>
+                                <span class="text git" data-width="80%"></span>
+                            </div>
+                        </div>
+                        <div class="modal-skill__item">
+                            <div class="modal-skill__title">Gulp</div>
+                            <div class="modal-skill__desc">Это инструмент автоматизации front-end разработки. Он помогает автоматизировать рутинные задачи и ускоряет работу над проектом. Например: минимизирует HTML и CSS файлы, оптимизирует изображения, автоматически удаляет неиспользуемый код, а также проверяет его правильнось. </div>
+                            <div class="wrapper_bar">
+                                <div class="skill-bar gulp"></div>
+                                <span class="text gulp" data-width="55%"></span>
+                            </div>
+                        </div>
+                        <div class="modal-skill__item">
+                            <div class="modal-skill__title">SQL</div>
+                            <div class="modal-skill__desc">Это язык структурированных запросов, используемый для работы с базами данных. С помощью SQL можно задавать структуру базы, организовывать выборку данных из неё по каким-то определённым критериям, удалять данные.</div>
+                            <div class="wrapper_bar">
+                                <div class="skill-bar sql"></div>
+                                <span class="text sql" data-width="55%"></span>
+                            </div>
+                        </div>
+                        <div class="modal-skill__item">
+                            <div class="modal-skill__title">PHP</div>
+                            <div class="modal-skill__desc">Это язык программирования,который ориентирован на разработку веб-приложений и веб-сайтов. Значительным отличием PHP от какого-либо кода, выполняющегося на стороне клиента, например, JavaScript, является то, что PHP-скрипты выполняются на стороне сервера. PHP позволяет создавать качественные Web-приложения за очень короткие сроки, получая продукты, легко модифицируемые и поддерживаемые в будущем.</div>
+                            <div class="wrapper_bar">
+                                <div class="skill-bar php"></div>
+                                <span class="text php" data-width="40%"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <a data-fancybox data-animation-duration="700" data-src="#skill3" href="">
+                    <div class="skill-box">
+                        <div class="skill-img">
+                            <i class="fab fa-wordpress"></i>
+                        </div>
+                        <div class="skill-name">
+                            Работа с CMS
+                        </div>
+                        <div class="skill-text">
+                            Wordpress <br>
+                            OpenCart
+                        </div>
+                    </div>
+                </a>
+                <div style="display: none;" id="skill3" class="animated-modal modal-skill">
+                    <div class="modal-skill__name">Работа с CMS</div>
+                    <div class="modal-skill__wrapper">
+                        <div class="modal-skill__item">
+                            <div class="modal-skill__title">Wordpress</div>
+                            <div class="modal-skill__desc">Это одна из наиболее популярных CMS в мире. С ее помощью можно создавать сайты различного характера и управлять ими без знаний и навыков программирования. Ее также называют движком ресурса. Сегодня в сети существует множество различных программ или систем управления, но WordPress является самой популярной. Более 30 % всех сайтов в интернете работают на данной платформе. А если говорить исключительно о площадках, работающих на CMS, то на WP приходится более 60 %, что делает ее однозначным лидером рынка.</div>
+                            <div class="wrapper_bar">
+                                <div class="skill-bar wordpress"></div>
+                                <span class="text wordpress" data-width="70%"></span>
+                            </div>
+                        </div>
+                        <div class="modal-skill__item">
+                            <div class="modal-skill__title">OpenCart</div>
+                            <div class="modal-skill__desc">Это быстрая и не требовательная к ресурсам сервера CMS. Это — движок интернет-магазина, ориентированный на создание удобных и продающих интернет-магазинов. Это — очень надёжное и простое решение для желающих создать свой онлайн магазин при минимальных затратах.</div>
+                            <div class="wrapper_bar">
+                                <div class="skill-bar opencart"></div>
+                                <span class="text opencart" data-width="55%"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <a data-fancybox data-animation-duration="700" data-src="#skill4" href="">
+                    <div class="skill-box">
+                        <div class="skill-img">
+                            <i class="fas fa-code"></i>
+                        </div>
+                        <div class="skill-name">
+                            Верстка
+                        </div>
+                        <div class="skill-text">
+                            HTML5 <br>
+                            CSS / SCSS
+                        </div>
+                    </div>
+                </a>
+                <div style="display: none;" id="skill4" class="animated-modal modal-skill">
+                    <div class="modal-skill__name">Верстка</div>
+                    <div class="modal-skill__wrapper">
+                        <div class="modal-skill__item">
+                            <div class="modal-skill__title">HTML5</div>
+                            <div class="modal-skill__desc">Это язык разметки гипертекста в сети интернет. Простым языком, если CSS определяет внешний вид web-страницы, HTML формирует ее структуру (скелет) посредством заголовков, списков и других подобных элементов, начиная от начала страницы — хедера, и до ее конца — футера.</div>
+                            <div class="wrapper_bar">
+                                <div class="skill-bar html"></div>
+                                <span class="text html" data-width="95%"></span>
+                            </div>
+                        </div>
+                        <div class="modal-skill__item">
+                            <div class="modal-skill__title">CSS</div>
+                            <div class="modal-skill__desc">Это формальный язык, служащий для описания оформления внешнего вида документа, созданного с использованием языка разметки HTML.</div>
+                            <div class="wrapper_bar">
+                                <div class="skill-bar css"></div>
+                                <span class="text css" data-width="90%"></span>
+                            </div>
+                        </div>
+                        <div class="modal-skill__item">
+                            <div class="modal-skill__title">SCSS</div>
+                            <div class="modal-skill__desc">Это "диалект" языка SASS, предназначенный для упрощения создания CSS-кода.</div>
+                            <div class="wrapper_bar">
+                                <div class="skill-bar scss"></div>
+                                <span class="text scss" data-width="90%"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <a data-fancybox data-animation-duration="700" data-src="#skill5" href="">
+                    <div class="skill-box">
+                        <div class="skill-img">
+                            <i class="fas fa-spinner"></i>
+                        </div>
+                        <div class="skill-name">
+                            Фреймворки
+                        </div>
+                        <div class="skill-text">
+                            Django
+                        </div>
+                    </div>
+                </a>
+                <div style="display: none;" id="skill5" class="animated-modal modal-skill">
+                    <div class="modal-skill__name">Фреймворки</div>
+                    <div class="modal-skill__wrapper">
+                        <div class="modal-skill__item">
+                            <div class="modal-skill__title">Django</div>
+                            <div class="modal-skill__desc">Это чрезвычайно популярный и полнофункциональный серверный веб-фреймворк,
+                                предназначенный для создания веб-приложений на языке Python. Веб-фреймворк Django используется в
+                                таких крупных и известных сайтах, как Instagram, Disqus, Mozilla, The Washington Times,
+                                Pinterest, YouTube, Google и др.</div>
+                            <div class="wrapper_bar">
+                                <div class="skill-bar django"></div>
+                                <span class="text django" data-width="55%"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <a data-fancybox data-animation-duration="700" data-src="#skill6" href="">
+                    <div class="skill-box">
+                        <div class="skill-img">
+                            <i class="fas fa-chart-area"></i>
+                        </div>
+                        <div class="skill-name">
+                            Веб-аналитика
+                        </div>
+                        <div class="skill-text">
+                            Google Analytics <br>
+                            Google Adsense <br>
+                            Яндекс.Метрика
+                        </div>
+                    </div>
+                </a>
+                <div style="display: none;" id="skill6" class="animated-modal modal-skill">
+                    <div class="modal-skill__name">Веб-аналитика</div>
+                    <div class="modal-skill__wrapper">
+                        <div class="modal-skill__item">
+                            <div class="modal-skill__title">Google Analytics</div>
+                            <div class="modal-skill__desc">Это разработанный поисковой системой Google специальный аналитический
+                                инструмент для отслеживания поведения пользователей на сайте.</div>
+                            <div class="wrapper_bar">
+                                <div class="skill-bar google"></div>
+                                <span class="text google" data-width="70%"></span>
+                            </div>
+                        </div>
+                        <div class="modal-skill__item">
+                            <div class="modal-skill__title">Google Adsense</div>
+                            <div class="modal-skill__desc">Это cервис контекстной рекламы и партнерская программа от поисковой системы
+                                Google. По инициативе владельца на его сайте размещаются текстовые и графические объявления,
+                                соответствующие контексту поискового запроса. За показ этих рекламных блоков, а так же за клики
+                                по ним владелец ресурса получает доход.</div>
+                            <div class="wrapper_bar">
+                                <div class="skill-bar google"></div>
+                                <span class="text google" data-width="70%"></span>
+                            </div>
+                        </div>
+                        <div class="modal-skill__item">
+                            <div class="modal-skill__title">Яндекс.Метрика</div>
+                            <div class="modal-skill__desc">Это бесплатный сервис, созданный для анализа поведения пользователей и оценки
+                                посещаемости сайтов.</div>
+                            <div class="wrapper_bar">
+                                <div class="skill-bar metric"></div>
+                                <span class="text metric" data-width="55%"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <a data-fancybox data-animation-duration="700" data-src="#skill7" href="">
+                    <div class="skill-box">
+                        <div class="skill-img">
+                            <i class="fas fa-book"></i>
+                        </div>
+                        <div class="skill-name">
+                            Библиотеки
+                        </div>
+                        <div class="skill-text">
+                            JQuery <br>
+                            React
+                        </div>
+                    </div>
+                </a>
+                <div style="display: none;" id="skill7" class="animated-modal modal-skill">
+                    <div class="modal-skill__name">Библиотеки</div>
+                    <div class="modal-skill__wrapper">
+                        <div class="modal-skill__item">
+                            <div class="modal-skill__title">JQuery</div>
+                            <div class="modal-skill__desc">Это набор функций JavaScript, фокусирующийся на взаимодействии JavaScript и HTML.
+                                Библиотека jQuery помогает легко получать доступ к любому элементу DOM, обращаться к атрибутам и
+                                содержимому элементов DOM, манипулировать ими. Также библиотека jQuery предоставляет удобный API
+                                для работы с AJAX.</div>
+                            <div class="wrapper_bar">
+                                <div class="skill-bar jquery"></div>
+                                <span class="text jquery" data-width="80%"></span>
+                            </div>
+                        </div>
+                        <div class="modal-skill__item">
+                            <div class="modal-skill__title">React</div>
+                            <div class="modal-skill__desc">Это JavaScript-библиотека с открытым исходным кодом для разработки пользовательских
+                                интерфейсов. React может использоваться для разработки одностраничных и мобильных приложений.
+                                Его цель — предоставить высокую скорость, простоту и масштабируемость. В качестве библиотеки для
+                                разработки пользовательских интерфейсов React часто используется с другими библиотеками, такими
+                                как Redux.</div>
+                            <div class="wrapper_bar">
+                                <div class="skill-bar react"></div>
+                                <span class="text react" data-width="35%"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer">
+                <div class="title">Dima Nikolaenko</div>
+                <div class="desc">Front-end Developer</div>
+                <div class="copyright">&#169 Dima Nikolaenko, 2020</div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>

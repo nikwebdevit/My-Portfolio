@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css"
+        integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
+
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:400,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap&subset=cyrillic" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Pattaya&display=swap&subset=cyrillic" rel="stylesheet">
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/main.css">
+    <script src="js/loader.js"></script>
+</head>
+
+<body>
+    <div class="wrapper">
+        <aside class="aside">
+            <div class="aside-logo">
+                <a href="index.html" class="logo transition"><i class="fas fa-code"></i>
+                    <h1>
+                        Dima Nikolaenko
+                        <span>Front-end Developer</span>
+                    </h1>
+                </a>
+            </div>
+            <nav class="aside-menu">
+                <ul>
+                    <li><a class="transition" href="index.html">Главная</a></li>
+                    <li><a class="transition" href="about.html">Обо Мне</a></li>
+                    <li><a class="transition" href="services.html">Услуги</a></li>
+                    <li><a class="transition" href="skills.html">Навыки</a></li>
+                    <li><a class="transition" href="portfolio.html">Портфолио</a></li>
+                    <li><a class="transition" href="price.html">Прайс-лист</a></li>
+                    <li><a class="transition" href="blog.html">Блог</a></li>
+                    <li class="active"><a class="transition" href="contact.html">Контакты</a></li>
+                </ul>
+            </nav>
+            <div class="aside-footer">
+                <div class="aside-soc">
+                    <a href=""><i class="fab fa-linkedin-in"></i></a>
+                    <a href=""><i class="fab fa-github"></i></a>
+                    <a href=""><i class="fab fa-instagram"></i></a>
+                </div>
+                <div class="copyright">&#169 Dima Nikolaenko, 2020</div>
+            </div>
+        </aside>
+        <div class="main">
+            <div class="burger"><span class="burger__line burger__menu"></span><span class="burger__close burger__menu burger__noactive"></span></div>
+            <div class="button__top"><i class="fas fa-arrow-circle-up"></i></div>
+            <div class="main_header_name">
+                <span class="heading-meta">Читать</span>
+                <h2>Контакты</h2>
+            </div>
+
+            <div class="wrapper_contact">
+                <div class="contact_info">
+                    <ul>
+                        <li>
+                            — Если Вы хотите задать вопрос, сообщить об ошибках или просто поздороваться, воспользуйтесь
+                            формой обратной связи или используйте другие контакты.
+                        </li>
+                        <li>
+                            — Или отправьте сообщение на один из указанных адресов.
+                        </li>
+                        <li>
+                            — Мною предусмотрены почти все доступные средства связи, поэтому Вы так же можете прислать
+                            мне сообщение в Skype или через один из популярных месседжеров по телефонам указанным ниже.
+                        </li>
+                    </ul>
+                    <hr>
+                    <div class="contact_info-block">
+                        <div class="info-block-name">
+                            Email
+                        </div>
+                        <div class="info-block-desc">
+                            <a href="mailto:dima.nikolaenko.ua@gmail.com">dima.nikolaenko.ua@gmail.com</a>
+                        </div>
+                    </div>
+                    <div class="contact_info-block">
+                        <div class="info-block-name">
+                            Телефон
+                        </div>
+                        <div class="info-block-desc">
+                            <a href="tel:+380637999880">+38 (063) 799-98-80</a>
+                        </div>
+                    </div>
+                    <div class="contact_info-block">
+                        <div class="info-block-name">
+                            WhatsApp
+                        </div>
+                        <div class="info-block-desc">
+                            <a href="https://wa.me/380637999880" target="_blank">Написать в WhatsApp</a>
+                        </div>
+                    </div>
+                    <div class="contact_info-block">
+                        <div class="info-block-name">
+                            Viber
+                        </div>
+                        <div class="info-block-desc">
+                            <a href="viber://add?number=380637999880" rel="nofollow">Написать в Viber</a>
+                        </div>
+                    </div>
+                    <div class="contact_info-block">
+                        <div class="info-block-name">
+                            Telegram
+                        </div>
+                        <div class="info-block-desc">
+                            <a href="http://t.me/dima_nikolaenko">@dima_nikolaenko</a>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="info-block-city">
+                        Киев, Украина
+                    </div>
+                </div>
+                <div class="contact_form">
+                    <form method="POST" class="contact__form" id="contact__form">
+                        <div class="form-attr">
+                            <p class="form-title">Ваше имя</p>
+                            <input class="form-input" type="text" name="username" required>
+                        </div>
+                        <div class="form-attr">
+                            <p class="form-title">Ваш e-mail</p>
+                            <input class="form-input" type="email" name="useremail" required>
+                        </div>
+                        <div class="form-attr">
+                            <p class="form-title">Тематика</p>
+                            <select class="form-input" name="Theme">
+                                <option value="Вопрос">Вопрос</option>
+                                <option value="Жалоба">Жалоба</option>
+                                <option value="Сотрудничество">Сотрудничество</option>
+                                <option value="Реклама">Реклама</option>
+                                <option value="Прочее">Прочее</option>
+                            </select>
+                        </div>
+                        <div class="form-attr">
+                            <p class="form-title">Сообщение</p>
+                            <textarea class="form-input" name="text" cols="40" rows="10" required></textarea>
+                        </div>
+                        <div class="form-attr">
+                            <button class="learn-more contact__submit" type="submit">
+                                <span class="circle" aria-hidden="true">
+                                    <span class="icon arrow"></span>
+                                </span>
+                                <span class="button-text">Отправить</span>
+                            </button>
+                            <div class="form-message">
+                                <div class="form-message__success">
+                                    <p class="form-message__text">Ваша заявка успешно отправлена!</p>
+                                    <i class="fas fa-thumbs-up"></i>
+                                </div>
+                                <div class="form-message__error">
+                                    <p class="form-message__text">Ошибка. Сообщение не отправлено!</p> <i class="fas fa-exclamation-triangle"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+
+            </div>
+
+            <div class="footer">
+                <div class="title">Dima Nikolaenko</div>
+                <div class="desc">Front-end Developer</div>
+                <div class="copyright">&#169 Dima Nikolaenko, 2020</div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/main.js"></script>
+    <script src="/js/telegramform.js"></script>
+</body>
+
+</html>
