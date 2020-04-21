@@ -182,10 +182,10 @@ a {
   bottom: 40px;
   z-index: 50;
   right: 20px;
-  height: 40px;
-  width: 40px;
+  height: 50px;
+  width: 50px;
   color: #000;
-  font-size: 38px;
+  font-size: 45px;
   background-color: #fff;
   border-radius: 50%;
   -webkit-box-pack: center;
@@ -198,9 +198,7 @@ a {
 }
 
 .main .button__top_show {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: none;
 }
 
 .main .burger {
@@ -212,15 +210,15 @@ a {
       -ms-flex-align: center;
           align-items: center;
   position: fixed;
-  top: 40px;
-  right: 20px;
-  width: 40px;
-  height: 40px;
+  top: 0px;
+  right: 0px;
+  width: 45px;
+  height: 45px;
   background-color: #000;
   z-index: 999;
-  border-radius: 50%;
   cursor: pointer;
-  border: 2px solid #fff;
+  border-left: 1px solid #fff;
+  border-bottom: 1px solid #fff;
 }
 
 .main .burger__noactive {
@@ -228,7 +226,7 @@ a {
 }
 
 .main .burger__line {
-  width: 18px;
+  width: 25px;
   height: 2px;
   background-color: #fff;
   position: relative;
@@ -236,24 +234,24 @@ a {
 
 .main .burger__line::before {
   content: "";
-  width: 18px;
+  width: 25px;
   height: 2px;
   background-color: #fff;
   position: absolute;
-  top: -5px;
+  top: -7px;
 }
 
 .main .burger__line::after {
   content: "";
-  width: 18px;
+  width: 25px;
   height: 2px;
   background-color: #fff;
   position: absolute;
-  bottom: -5px;
+  bottom: -7px;
 }
 
 .main .burger__close {
-  width: 18px;
+  width: 25px;
   height: 2px;
   background-color: #fff;
   position: relative;
@@ -263,7 +261,7 @@ a {
 
 .main .burger__close::before {
   content: "";
-  width: 18px;
+  width: 25px;
   height: 2px;
   background-color: #fff;
   position: absolute;
@@ -3546,12 +3544,12 @@ a {
     font-size: 14px;
   }
   .wrapper_portfolio {
-    -ms-grid-columns: (minmax(200px, 1fr))[auto-fit];
-        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    -ms-grid-columns: (minmax(140px, 1fr))[auto-fit];
+        grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
   }
   .wrapper_portfolio .portfolio {
-    height: 300px;
-    border-radius: 50%;
+    height: 200px;
+    border-radius: 5px;
   }
   .wrapper_portfolio .portfolio .portfolio-innertop {
     display: none;
@@ -3587,11 +3585,11 @@ a {
             align-items: center;
     font-size: 14px;
     font-family: "Comfortaa", sans-serif;
-    letter-spacing: 2px;
+    letter-spacing: 1px;
   }
   .animated-modal_portfolio {
     max-width: 100%;
-    margin: 10px;
+    margin: 0px;
     padding: 50px 10px;
   }
   .animated-modal_portfolio .modal_port-header {
@@ -3603,11 +3601,11 @@ a {
     display: none;
   }
   .animated-modal_portfolio .modal_port-header .block-top {
-    font-size: 11px;
+    font-size: 13px;
     margin-bottom: 5px;
   }
   .animated-modal_portfolio .modal_port-header .block-bottom {
-    font-size: 10px;
+    font-size: 12px;
     margin-bottom: 15px;
   }
   .animated-modal_portfolio .modal_port-main {
@@ -4023,12 +4021,12 @@ a {
     font-size: 14px;
   }
   .wrapper_portfolio {
-    -ms-grid-columns: (minmax(200px, 1fr))[auto-fit];
-        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    -ms-grid-columns: (minmax(100px, 1fr))[auto-fit];
+        grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
   }
   .wrapper_portfolio .portfolio {
-    height: 250px;
-    border-radius: 50%;
+    height: 200px;
+    border-radius: 5px;
   }
   .wrapper_portfolio .portfolio .portfolio-innertop {
     display: none;
@@ -4064,11 +4062,11 @@ a {
             align-items: center;
     font-size: 14px;
     font-family: "Comfortaa", sans-serif;
-    letter-spacing: 2px;
+    letter-spacing: 1px;
   }
   .animated-modal_portfolio {
     max-width: 100%;
-    margin: 10px;
+    margin: 0px;
     padding: 50px 10px;
   }
   .animated-modal_portfolio .modal_port-header {
@@ -4080,11 +4078,11 @@ a {
     display: none;
   }
   .animated-modal_portfolio .modal_port-header .block-top {
-    font-size: 11px;
+    font-size: 13px;
     margin-bottom: 5px;
   }
   .animated-modal_portfolio .modal_port-header .block-bottom {
-    font-size: 10px;
+    font-size: 12px;
     margin-bottom: 15px;
   }
   .animated-modal_portfolio .modal_port-main {

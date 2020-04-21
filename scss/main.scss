@@ -156,10 +156,10 @@ a {
     bottom: 40px;
     z-index: 50;
     right: 20px;
-    height: 40px;
-    width: 40px;
+    height: 50px;
+    width: 50px;
     color: #000;
-    font-size: 38px;
+    font-size: 45px;
     background-color: #fff;
     border-radius: 50%;
     justify-content: center;
@@ -167,56 +167,56 @@ a {
     cursor: pointer;
   }
   .button__top_show {
-    display: flex;
+    display: none;
   }
   .burger {
     display: none;
     justify-content: center;
     align-items: center;
     position: fixed;
-    top: 40px;
-    right: 20px;
-    width: 40px;
-    height: 40px;
+    top: 0px;
+    right: 0px;
+    width: 45px;
+    height: 45px;
     background-color: #000;
     z-index: 999;
-    border-radius: 50%;
     cursor: pointer;
-    border: 2px solid #fff;
+    border-left: 1px solid #fff;
+    border-bottom: 1px solid #fff;
     &__noactive {
       display: none;
     }
     &__line {
-      width: 18px;
+      width: 25px;
       height: 2px;
       background-color: #fff;
       position: relative;
       &::before {
         content: "";
-        width: 18px;
+        width: 25px;
         height: 2px;
         background-color: #fff;
         position: absolute;
-        top: -5px;
+        top: -7px;
       }
       &::after {
         content: "";
-        width: 18px;
+        width: 25px;
         height: 2px;
         background-color: #fff;
         position: absolute;
-        bottom: -5px;
+        bottom: -7px;
       }
     }
     &__close {
-      width: 18px;
+      width: 25px;
       height: 2px;
       background-color: #fff;
       position: relative;
       transform: rotate(45deg);
       &::before {
         content: "";
-        width: 18px;
+        width: 25px;
         height: 2px;
         background-color: #fff;
         position: absolute;
@@ -3089,10 +3089,10 @@ a {
 
   //portfolio
   .wrapper_portfolio {
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
     .portfolio {
-      height: 300px;
-      border-radius: 50%;
+      height: 200px;
+      border-radius: 5px;
       .portfolio-innertop {
         display: none;
       }
@@ -3121,14 +3121,14 @@ a {
         align-items: center;
         font-size: 14px;
         font-family: $fontmenu;
-        letter-spacing: 2px;
+        letter-spacing: 1px;
       }
     }
   }
 
   .animated-modal_portfolio {
     max-width: 100%;
-    margin: 10px;
+    margin: 0px;
     padding: 50px 10px;
     .modal_port-header {
       height: auto;
@@ -3137,11 +3137,11 @@ a {
         display: none;
       }
       .block-top {
-        font-size: 11px;
+        font-size: 13px;
         margin-bottom: 5px;
       }
       .block-bottom {
-        font-size: 10px;
+        font-size: 12px;
         margin-bottom: 15px;
       }
     }
@@ -3556,10 +3556,10 @@ a {
 
   //portfolio
   .wrapper_portfolio {
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
     .portfolio {
-      height: 250px;
-      border-radius: 50%;
+      height: 200px;
+      border-radius: 5px;
       .portfolio-innertop {
         display: none;
       }
@@ -3588,14 +3588,14 @@ a {
         align-items: center;
         font-size: 14px;
         font-family: $fontmenu;
-        letter-spacing: 2px;
+        letter-spacing: 1px;
       }
     }
   }
 
   .animated-modal_portfolio {
     max-width: 100%;
-    margin: 10px;
+    margin: 0px;
     padding: 50px 10px;
     .modal_port-header {
       height: auto;
@@ -3604,11 +3604,11 @@ a {
         display: none;
       }
       .block-top {
-        font-size: 11px;
+        font-size: 13px;
         margin-bottom: 5px;
       }
       .block-bottom {
-        font-size: 10px;
+        font-size: 12px;
         margin-bottom: 15px;
       }
     }
