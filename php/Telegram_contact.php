@@ -8,8 +8,8 @@ $useremail = $_POST['useremail'];
 $theme = $_POST['Theme'];
 $text = $_POST['text'];
 
-$token = "994885068:AAGz1i1uThHtLYyA6g67XisJoab5nDbj3gc";
-$chat_id = "-499214792";
+$token = "";
+$chat_id = "";
 $arr = [
   'Имя: ' => $username,
   'Email: ' => $useremail,
